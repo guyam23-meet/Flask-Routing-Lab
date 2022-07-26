@@ -8,11 +8,12 @@ app = Flask(  # Create a flask app
 )
 
 # Your code should be below
+@app.route('/')
+def home():
+    return render_template("home.html")
 
 
-
-
-# Your code should be above
+# Your code should be above 
 
 if __name__ == "__main__":  # Makes sure this is the main process
     app.run(debug=True)
