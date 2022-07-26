@@ -5,6 +5,12 @@
     <title>Product</title>
 </head>
 <body>
-
+    <h1>{{name}}</h1>
+    <img src = "/static/{{image_name}}.jpeg">
+    <p>{{description}}</p>
+    <br>
+    <a href="{{url_for('cart')}}">Add To Cart</a>
+    <br>
+    <a href="{{url_for('home')}}">To HomePage</a>
 </body>
 </html>

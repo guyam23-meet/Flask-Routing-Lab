@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
+    <style> 
         img {
             width: 200px;
             height: 150px;
@@ -14,11 +14,14 @@
     <h1>The official gucci ripoff</h1>
     <p>Wanna buy gucci but don't wanna pay that cash money? This is for you!</p>
     <h2>SHOES</h2>
-    <img src ="static/feetshoes.jpeg">
-    <img src="static/idEvenk.jpeg">
-    <img src="static/fishydude.jpeg"> 
+    <a href = "{{ url_for('product',image_name='feetshoes',description='it is what you think it is',name='took them from grandma') }}"><img src ="static/feetshoes.jpeg"></a>
+    <a href = "{{ url_for('product',image_name='idEvenk',description='I literly have 0 idea what the living sht is this',name='Goofi ahh') }}"><img src="static/idEvenk.jpeg"></a>
+    <a href = "{{ url_for('product',image_name='fishydude',description='Love fish, Love flip-flops, Enjoy both at once!',name='Fish-Flop') }}"><img src="static/fishydude.jpeg"></a>
     <h2>HATS</h2>
-    <img src="static/ashyhat.jpeg">
-    <img src="static/nobagnoprob.jpeg">
+    <a href = "{{ url_for('product',image_name='ashyhat',description='For all the nicotine lovers',name='Cigarhat') }}"><img src="static/ashyhat.jpeg"></a>
+    <a href = "{{ url_for('product',image_name='nobagnoprob',description='Is it a bag... Is it a hat... No! It is an ugly!',name='The Extrastore') }}"><img src="static/nobagnoprob.jpeg"></a>
+    <a href = "{{ url_for('product',image_name='egghat',description='Makes you have a beautiful long face',name='The Long-Face') }}"><img src="static/egghat.jpeg"></a>
+    <br>
+    <a href="{{url_for('cart')}}">To Cart</a>
 </body>
 </html>
